@@ -1,0 +1,14 @@
+The FULL OUTER JOIN keyword returns all records when there is a match in left (table1) or right (table2) table records.
+
+FULL OUTER JOIN Syntax:
+SELECT column_name(s)
+FROM table1
+FULL OUTER JOIN table2
+ON table1.column_name = table2.column_name
+WHERE condition;
+
+Example:
+SELECT e.ename, d.deptno
+FROM emp e, dept d
+FULL OUTER JOIN dept ON e.deptno=d.deptno
+ORDER BY d.deptno;
