@@ -1,3 +1,24 @@
 An aggregate function performs a calculation on a set of values, and returns a single value. Except for COUNT(*), aggregate functions ignore null values. 
 Aggregate functions are often used with the GROUP BY clause of the SELECT statement.
 
+Example fro SUM() Function:
+SELECT SUM(sal)
+FROM emp;
+
+Example for COUNT() Function:
+SELECT COUNT(ename)
+FROM TableName
+WHERE deptno=20;
+
+Example for AVG() FUnction:
+SELECT AVG(sal)
+FROM emp;
+
+Example MIN():
+SELECT MIN(sal)
+FROM emp;
+
+Example for MAX():
+SELECT MAX(sal)
+FROM emp;
+
