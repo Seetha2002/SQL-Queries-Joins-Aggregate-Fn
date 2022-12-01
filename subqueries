@@ -1,0 +1,13 @@
+In SQL a Subquery can be simply defined as a query within another query. In other words we can say that a Subquery is a query that is embedded in WHERE clause 
+of another SQL query.
+
+Syntax:
+SELECT column_name
+FROM table_name
+WHERE column_name expression operator 
+    ( SELECT COLUMN_NAME  from TABLE_NAME   WHERE ... );
+    
+Example:
+select dname from dept 
+where dept in
+(select deptno from emp where sal between 1000 and 2000)
