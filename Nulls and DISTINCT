@@ -1,0 +1,10 @@
+DISTINCT: Return Distinct number of records from the column or distinct combinations of column values if multiple columns are specified. The presence of NULL 
+is also taken as a Distinct record.
+
+NULL: It is the absence of value or the lack of value for that column. SQL null is a state, not a value. One NULL is not equal to another NULL and it is not 
+same as zero.
+
+select distinct deptno from emp;
+
+select empno. ename from emp where comm is null;
+
