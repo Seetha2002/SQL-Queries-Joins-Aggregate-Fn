@@ -1,0 +1,7 @@
+In SQL we can retrieve data from multiple tables also by using SELECT with multiple tables which actually results in CROSS JOIN of all the tables. The resulting
+table occurring from CROSS JOIN of two contains all the row combinations of the 2nd table which is a Cartesian product of tables. If we consider table1 
+contains m rows and table2 contains n rows then the resulting table after selecting two tables i.e cross join of two tables contains m*n rows.
+
+select * from emp, dept;
+
+select e.ename, d.deptno from emp e, dept d;
